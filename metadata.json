@@ -6,11 +6,11 @@
     "43",
     "44"
 ],
-"uuid": "dash-to-dock@micxgx.gmail.com",
-"name": "Dash to Dock",
-"description": "A dock for the Gnome Shell. This extension moves the dash out of the overview transforming it in a dock for an easier launching of applications and a faster switching between windows and desktops. Side and bottom placement options are available.",
+"uuid": "dock@zarya.com",
+"name": "dock",
+"description": "Fork of dash-to-dock/ubuntu-dock GNOME Shell extension with zarya-session defaults.",
 "original-author": "micxgx@gmail.com",
-"url": "https://micheleg.github.io/dash-to-dock/",
+"url": "https://zarya-os/dock/",
 "gettext-domain": "dashtodock",
 "version": 82
 }

@@ -1,6 +1,6 @@
 # Basic Makefile
 
-UUID = dash-to-dock@micxgx.gmail.com
+UUID = dock@zarya.com
 BASE_MODULES = extension.js \
                metadata.json \
                COPYING \
@@ -48,7 +48,7 @@ else
 	SHARE_PREFIX = $(DESTDIR)/usr/share
 	INSTALLBASE = $(SHARE_PREFIX)/gnome-shell/extensions
 endif
-INSTALLNAME = dash-to-dock@micxgx.gmail.com
+INSTALLNAME = dock@zarya.com
 
 # The command line passed variable VERSION is used to set the version string
 # in the metadata and in the generated zip-file. If no VERSION is passed, the
@@ -140,14 +140,3 @@ _build: all
 		cp $$l $$lf/LC_MESSAGES/dashtodock.mo; \
 	done;
 	sed -i 's/"version": -1/"version": "$(VERSION)"/'  _build/metadata.json;
-
-ifeq ($(strip $(ESLINT)),)
-    ESLINT = eslint
-endif
-
-ifneq ($(strip $(ESLINT_TAP)),)
-    ESLINT_ARGS = -f tap
-endif
-
-check:
-	$(ESLINT) $(ESLINT_ARGS) .

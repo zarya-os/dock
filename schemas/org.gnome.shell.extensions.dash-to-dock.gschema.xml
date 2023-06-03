@@ -71,7 +71,7 @@
       <description>Sets the delay after the mouse left the dock before hiding it.</description>
     </key>
     <key type="b" name="disable-overview-on-startup">
-      <default>false</default>
+      <default>true</default>
       <summary>Do not show overview on startup</summary>
       <description>Whether to show or not the overview during startup animation.</description>
     </key>
@@ -181,7 +181,7 @@
       <description>Set the allowed maximum dash preview size scale. Allowed range: 0,00..1,00.</description>
     </key>
     <key type="b" name="icon-size-fixed">
-      <default>false</default>
+      <default>true</default>
       <summary>Fixed icon size</summary>
       <description>Keep the icon size fixed by scrolling the dock.</description>
     </key>
@@ -256,7 +256,7 @@
       <description>Show or hide favorite applications icons in the dash</description>
     </key>
     <key type="b" name="show-trash">
-      <default>true</default>
+      <default>false</default>
       <summary>Show trash can</summary>
       <description>Show or hide the trash can icon in the dash</description>
     </key>
@@ -345,7 +345,7 @@
       <summary>Activate only one window</summary>
     </key>
     <key name="click-action" enum="org.gnome.shell.extensions.dash-to-dock.clickAction">
-      <default>'cycle-windows'</default>
+      <default>'focus-minimize-or-appspread'</default>
       <summary>Action when clicking on a running app</summary>
       <description>Set the action that is executed when clicking on the icon of a running application</description>
     </key>

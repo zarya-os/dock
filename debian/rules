@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+#export DH_VERBOSE = 1
+
+%:
+	dh $@ --with translations
+
+override_dh_install:
+	dh_install --fail-missing
+	rm debian/*/usr/share/gnome-shell/extensions/dock@zarya.com/COPYING
+	rm debian/*/usr/share/gnome-shell/extensions/dock@zarya.com/prefs.js
+
+override_dh_translations:
+	make ./po/dashtodock.pot
+	dh_translations
